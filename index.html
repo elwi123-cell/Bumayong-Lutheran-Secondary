@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bumayong Lutheran Secondary School, Lae, Morobe Province, Papua New Guinea. Faith-based secondary education, academic excellence, student development, practical learning, leadership and community service.">
+<meta name="keywords" content="Bumayong Lutheran Secondary School, Bumayong Lutheran, BLSS, Lae, Morobe Province, Papua New Guinea, Lutheran school, secondary education, Strive For Excellence">
+<meta name="author" content="Bumayong Lutheran Secondary School">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#123b6d">
+<title>Bumayong Lutheran Secondary School | Strive For Excellence</title>
+<style>
+:root{--primary:#174f8a;--primary-dark:#123b6d;--primary-deep:#082849;--accent:#5f9bd8;--accent-light:#9ec7ed;--light:#edf6ff;--white:#fff;--dark:#0b2948;--text:#29435d;--muted:#61758a;--line:#d4e3f1;--shadow:0 10px 28px rgba(18,59,109,.12);--radius:14px;--transition:all .25s ease}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.65;color:var(--text);background:#fff}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto}
+.container{width:min(1200px,100%);margin:auto;padding:0 clamp(15px,3vw,30px)}
+.top-bar{background:var(--primary-dark);color:#fff;font-size:.86rem;padding:8px 0}
+.top-inner{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.top-bar a{color:#fff}.top-bar a:hover{color:var(--accent-light)}
+.header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 3px 16px rgba(18,59,109,.10)}
+.header-main{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:94px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:14px;min-width:0}
+.logo{width:72px;height:72px;flex:0 0 72px;border-radius:50%;border:3px solid var(--accent-light);background:linear-gradient(145deg,var(--primary),var(--primary-dark));display:grid;place-items:center;color:#fff;font-weight:900;font-size:.9rem;letter-spacing:1px;text-align:center;box-shadow:0 4px 12px rgba(18,59,109,.18)}
+.identity h1{font-size:clamp(1.05rem,2vw,1.45rem);line-height:1.2;color:var(--primary-dark)}
+.identity p{font-size:.84rem;color:var(--primary);font-weight:700;letter-spacing:.4px}
+.nav-toggle{display:none;border:1px solid var(--line);background:#fff;color:var(--primary-dark);font-size:1.5rem;border-radius:8px;padding:7px 12px;cursor:pointer}
+.main-nav>ul{list-style:none;display:flex;align-items:center;justify-content:flex-end;gap:3px;flex-wrap:wrap}
+.main-nav li{position:relative}
+.main-nav>ul>li>a,.menu-button{display:block;padding:10px 11px;border:0;border-radius:8px;background:transparent;color:var(--primary-dark);font:600 .9rem Arial;cursor:pointer}
+.main-nav>ul>li>a:hover,.main-nav>ul>li>a.active,.menu-button:hover{background:var(--primary);color:#fff}
+.dropdown{position:absolute;left:0;top:100%;min-width:225px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:6px;opacity:0;visibility:hidden;transform:translateY(8px);transition:var(--transition);z-index:30}
+.has-dropdown:hover>.dropdown,.has-dropdown:focus-within>.dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.dropdown a{display:block;padding:10px 12px;border-radius:7px;color:var(--text);font-size:.9rem}
+.dropdown a:hover{background:var(--light);color:var(--primary)}
+.hero{position:relative;overflow:hidden;color:#fff;padding:clamp(72px,9vw,125px) 0 90px;background:linear-gradient(110deg,rgba(8,40,73,.97),rgba(23,79,138,.88)),radial-gradient(ellipse at 80% 20%,var(--accent) 0,transparent 32%),linear-gradient(135deg,var(--primary),var(--primary-dark))}
+.hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-100px;bottom:-270px;box-shadow:0 0 0 45px rgba(255,255,255,.04),0 0 0 90px rgba(255,255,255,.03)}
+.hero-content{position:relative;z-index:1;max-width:880px}
+.eyebrow{display:inline-block;color:var(--accent-light);text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;margin-bottom:16px}
+.hero h2{font-size:clamp(2.2rem,5vw,4.15rem);line-height:1.08;letter-spacing:-1px;max-width:840px;margin-bottom:20px}
+.hero .tagline{font-size:clamp(1.1rem,2.4vw,1.5rem);font-weight:700;color:var(--accent-light);margin-bottom:17px}
+.hero p{font-size:1.08rem;max-width:760px;color:#eaf4ff;margin-bottom:30px}
+.hero-buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 21px;border-radius:8px;font-weight:800;border:2px solid transparent;transition:var(--transition)}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-light);color:var(--primary-deep);transform:translateY(-2px)}
+.btn-outline{border-color:#fff;color:#fff}.btn-outline:hover{background:#fff;color:var(--primary-dark)}
+.trust-strip{background:#fff;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-top:22px;padding-bottom:22px}
+.trust-item{display:flex;gap:12px;align-items:center;padding:8px 12px}
+.trust-icon{width:43px;height:43px;border-radius:12px;background:var(--light);border:1px solid var(--line);display:grid;place-items:center;font-size:1.1rem;font-weight:900;color:var(--primary);flex-shrink:0}
+.trust-item strong{display:block;color:var(--primary-dark);font-size:.97rem}.trust-item span{display:block;color:var(--muted);font-size:.84rem}
+.section{padding:76px 0}.section.soft{background:var(--light)}
+.section-title{text-align:center;max-width:780px;margin:0 auto 42px}
+.section-title .eyebrow{color:var(--primary);margin-bottom:8px}
+.section-title h2{font-size:clamp(1.8rem,3.4vw,2.55rem);line-height:1.2;color:var(--primary-dark);margin-bottom:12px}
+.section-title p{color:var(--muted)}
+.section-title h2:after{content:"";display:block;width:66px;height:4px;background:var(--accent);border-radius:4px;margin:14px auto 0}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.card{height:100%;padding:27px 25px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 3px 12px rgba(18,59,109,.05);transition:var(--transition)}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--accent)}
+.card-icon{width:58px;height:58px;border-radius:15px;display:grid;place-items:center;background:var(--light);border:1px solid var(--line);font-size:1.2rem;font-weight:900;color:var(--primary);margin-bottom:18px}
+.card h3{font-size:1.2rem;color:var(--primary-dark);margin-bottom:10px}
+.card p{font-size:.95rem;color:var(--muted);margin-bottom:18px}.text-link{font-weight:800;color:var(--primary);font-size:.92rem}.text-link:hover{color:var(--primary-dark)}
+.technical{background:linear-gradient(135deg,var(--primary-deep),var(--primary));color:#fff;position:relative;overflow:hidden}
+.technical:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 85% 10%,rgba(158,199,237,.16),transparent 35%);pointer-events:none}
+.tech-layout{position:relative;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:clamp(28px,5vw,65px)}
+.tech-copy .eyebrow{color:var(--accent-light)}.tech-copy h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.13;margin-bottom:18px}
+.tech-copy p{color:#dcecff;margin-bottom:16px}
+.tech-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:24px 0 28px}
+.tech-points span{display:flex;gap:9px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:10px 12px;font-size:.91rem;color:#f2f8ff}
+.tech-visual{min-height:390px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.20);background:linear-gradient(160deg,#9ec7ed,#5f9bd8 48%,#174f8a);position:relative;display:flex;align-items:end;justify-content:center}
+.workshop-art{position:absolute;inset:0;width:100%;height:100%}
+.visual-caption{position:relative;z-index:2;width:100%;padding:25px;background:linear-gradient(transparent,rgba(8,40,73,.94));color:#fff}
+.visual-caption strong{display:block;font-size:1.25rem;margin-bottom:4px}.visual-caption span{font-size:.9rem;color:#dcecff}
+.notice-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.notice-main,.notice-side{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 4px 15px rgba(18,59,109,.05)}
+.notice-label{display:inline-block;padding:5px 10px;border-radius:999px;background:var(--light);border:1px solid var(--line);color:var(--primary);font-size:.78rem;font-weight:800;margin-bottom:14px}
+.notice-main h3,.notice-side h3{color:var(--primary-dark);font-size:1.35rem;margin-bottom:10px}
+.notice-main p,.notice-side p{color:var(--muted);font-size:.95rem;margin-bottom:16px}.notice-side{display:flex;flex-direction:column;gap:17px}
+.notice-row{padding-bottom:15px;border-bottom:1px solid var(--line)}.notice-row:last-child{border-bottom:0;padding-bottom:0}.notice-row h4{color:var(--primary-dark);margin-bottom:5px}
+.principal-box{display:grid;grid-template-columns:145px 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,42px);box-shadow:var(--shadow)}
+.principal-mark{width:135px;height:135px;border-radius:50%;background:linear-gradient(140deg,var(--primary),var(--primary-dark));border:5px solid var(--accent-light);display:grid;place-items:center;color:#fff;font-size:1.5rem;font-weight:900;text-align:center;margin:auto}
+.principal-box h2{font-size:1.65rem;color:var(--primary-dark);margin-bottom:10px}.principal-box p{color:var(--muted);margin-bottom:12px}.principal-box .role{font-weight:800;color:var(--primary)}
+.cta{background:var(--light);padding:60px 0;text-align:center}.cta h2{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--primary-dark);margin-bottom:12px}.cta p{max-width:720px;margin:0 auto 24px;color:var(--muted)}.cta .btn-primary{background:var(--primary);color:#fff}.cta .btn-primary:hover{background:var(--primary-dark)}
+.footer{background:var(--primary-deep);color:#e6f1ff;padding:58px 0 22px}.footer-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr 1.1fr;gap:30px;margin-bottom:35px}
+.footer h3{font-size:1.08rem;color:var(--accent-light);margin-bottom:17px}.footer p,.footer li{font-size:.91rem;color:#c9ddf2;margin-bottom:9px}.footer ul{list-style:none}.footer a:hover{color:var(--accent-light)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;text-align:center;font-size:.84rem;color:#a9c4de}.footer-bottom p{margin:0}.contact-list a{overflow-wrap:anywhere}.small-note{font-size:.82rem;color:#6b7f93;margin-top:12px}
+@media(max-width:1050px){.header-main{flex-wrap:wrap}.main-nav{width:100%}.main-nav>ul{justify-content:center}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.top-inner{justify-content:center;text-align:center}.header-main{justify-content:space-between}.nav-toggle{display:block}.main-nav{display:none;width:100%;padding-top:6px}.main-nav.active{display:block}.main-nav>ul{display:flex;flex-direction:column;align-items:stretch}.main-nav>ul>li>a,.menu-button{width:100%;text-align:left;padding:12px}.dropdown{position:static;display:none;opacity:1;visibility:visible;transform:none;box-shadow:none;border-radius:8px;margin:2px 0 7px 12px;min-width:0}.has-dropdown.open>.dropdown{display:block}.has-dropdown:hover>.dropdown{opacity:1;visibility:visible}.trust-grid{grid-template-columns:1fr;gap:4px}.section{padding:55px 0}.tech-layout,.notice-grid{grid-template-columns:1fr}.tech-visual{min-height:330px}.principal-box{grid-template-columns:1fr;text-align:center}.principal-mark{margin-bottom:4px}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.logo{width:56px;height:56px;flex-basis:56px;font-size:.75rem}.identity h1{font-size:1rem}.identity p{font-size:.72rem}.hero{padding:66px 0 58px}.hero h2{font-size:2.1rem}.hero-buttons{flex-direction:column}.btn{width:100%}.cards{grid-template-columns:1fr}.tech-points{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.notice-main,.notice-side{padding:22px}.tech-visual{min-height:280px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="top-bar"><div class="container top-inner">
+<span>PO Box 386, Lae 411, Morobe Province, Papua New Guinea</span>
+<span>Tel: <a href="tel:+6754757120">+675 475 7120</a> &nbsp; | &nbsp; Mobile: <a href="tel:+67583700055">+675 837 00055</a></span>
+</div></div>
+
+<header class="header">
+<div class="container header-main">
+<a class="brand" href="index.html" aria-label="Bumayong Lutheran Secondary School home">
+<div class="logo" aria-hidden="true">BLSS</div>
+<div class="identity"><h1>Bumayong Lutheran Secondary School</h1><p>Strive For Excellence</p></div>
+</a>
+<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">☰</button>
+<nav class="main-nav" id="mainNav" aria-label="Main navigation">
+<ul>
+<li><a class="active" href="index.html">Home</a></li>
+<li class="has-dropdown"><a href="about.html">About Us ▾</a><div class="dropdown">
+<a href="profile.html">School Profile</a><a href="school-history.html">School History</a><a href="vision-mission.html">Vision &amp; Mission</a><a href="leadership.html">Leadership</a><a href="school-governance.html">Governance</a></div></li>
+<li class="has-dropdown"><a href="academics.html">Learning ▾</a><div class="dropdown">
+<a href="academics.html">Academic Programmes</a><a href="departments.html">Subject Departments</a><a href="teaching-and-learning.html">Teaching &amp; Learning</a><a href="academic-calendar.html">Academic Calendar</a><a href="examinations.html">Examinations &amp; Results</a></div></li>
+<li class="has-dropdown"><a href="faith-and-values.html">Faith &amp; Values ▾</a><div class="dropdown">
+<a href="faith-and-values.html">Faith &amp; Values</a><a href="chaplaincy.html">Spiritual Life</a><a href="character-development.html">Character Development</a><a href="community-service.html">Community Service</a></div></li>
+<li class="has-dropdown"><a href="students.html">Student Life ▾</a><div class="dropdown">
+<a href="students.html">Student Life</a><a href="student-leadership.html">Student Leadership</a><a href="student-welfare.html">Student Welfare</a><a href="sports.html">Sports &amp; Activities</a><a href="student-code-of-conduct.html">Student Code of Conduct</a></div></li>
+<li class="has-dropdown"><a href="admissions.html">Admissions ▾</a><div class="dropdown">
+<a href="admissions.html">Admissions Information</a><a href="application.html">Application Information</a><a href="fees.html">Fees &amp; Charges</a><a href="grade11.html">Grade 11 &amp; 12 Pathways</a></div></li>
+<li class="has-dropdown"><a href="news.html">News &amp; Media ▾</a><div class="dropdown">
+<a href="news.html">School News</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="downloads.html">Downloads</a></div></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container"><div class="hero-content">
+<span class="eyebrow">Bumayong Lutheran Secondary School • Lae, Papua New Guinea</span>
+<h2>Strive For Excellence.<br>Learn. Serve. Lead.</h2>
+<div class="tagline">Faith, academic learning, character and practical opportunity for a changing Papua New Guinea.</div>
+<p>Welcome to Bumayong Lutheran Secondary School's professional information portal for students, parents, staff, partners and the wider community. As a church agency school of the Evangelical Lutheran Church of Papua New Guinea, Bumayong brings together secondary education, Christian values, student development, community responsibility and pathways toward further education and productive service.</p>
+<div class="hero-buttons"><a class="btn btn-primary" href="academics.html">Explore Learning <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="admissions.html">Admissions Information</a></div>
+</div></div>
+</section>
+
+<section class="trust-strip" aria-label="School priorities"><div class="container trust-grid">
+<div class="trust-item"><div class="trust-icon">A</div><div><strong>Academic Excellence</strong><span>Strong secondary education and pathways beyond school</span></div></div>
+<div class="trust-item"><div class="trust-icon">F</div><div><strong>Faith &amp; Character</strong><span>Christian values, responsibility, discipline and service</span></div></div>
+<div class="trust-item"><div class="trust-icon">P</div><div><strong>Practical Opportunity</strong><span>Technology, agriculture, sport, leadership and community engagement</span></div></div>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="section-title"><span class="eyebrow">Your School Portal</span><h2>Discover Bumayong Lutheran Secondary School</h2><p>Explore the school's history, learning programmes, faith-based identity, student life, opportunities and community partnerships in one professional portal.</p></div>
+<div class="cards">
+<article class="card"><div class="card-icon">01</div><h3>Academic Learning</h3><p>Publicly available school information identifies Bumayong as a secondary school serving lower and upper secondary learners, with subjects including English, Mathematics, Science, Social Science, Business, Commerce, Religion, Arts, Personal Development and a broad upper-secondary academic offering.</p><a class="text-link" href="academics.html">Explore academics →</a></article>
+<article class="card"><div class="card-icon">02</div><h3>Faith &amp; Character</h3><p>Bumayong Lutheran Secondary School is a church agency school of the Evangelical Lutheran Church of Papua New Guinea. Its public school profile identifies “Strive For Excellence” as the school motto, while recent reporting highlights renewed spiritual activity and community engagement.</p><a class="text-link" href="faith-and-values.html">Explore faith &amp; values →</a></article>
+<article class="card"><div class="card-icon">03</div><h3>Student Pathways</h3><p>The school supports students preparing for further education and employment. Recent tertiary records include Bumayong graduates entering programmes in areas such as tourism and hospitality and marketing, demonstrating pathways beyond secondary school.</p><a class="text-link" href="admissions.html">Explore pathways →</a></article>
+<article class="card"><div class="card-icon">04</div><h3>Digital Learning</h3><p>The school has a history of investing in information technology. In 2013, 30 computers and a renovated computer laboratory were launched, with plans for students to learn computer use, assembly and programming.</p><a class="text-link" href="technology.html">Explore technology →</a></article>
+<article class="card"><div class="card-icon">05</div><h3>Sport &amp; Student Life</h3><p>Student development extends beyond the classroom. In 2025, the school's open girls' rugby league team won the Prima Lae Biscuit Rugby League School Carnival shield, an achievement reflecting teamwork, confidence and participation.</p><a class="text-link" href="sports.html">Explore student life →</a></article>
+<article class="card"><div class="card-icon">06</div><h3>Partnerships &amp; Community</h3><p>In February 2026, Bumayong signed an agreement with the Taiwan Technical Mission for a Smallholder Mechanization Empowerment Project linked to the campus farm, practical learning, production and self-reliance.</p><a class="text-link" href="partners.html">Explore partnerships →</a></article>
+</div>
+</div></section>
+
+<section class="section technical" id="partnerships"><div class="container tech-layout">
+<div class="tech-copy"><span class="eyebrow">The Bumayong Opportunity</span><h2>Learning That Connects Knowledge With Life</h2>
+<p>Bumayong's public record shows a school working to strengthen academic standards while creating practical opportunities for students. The school's earlier School of Excellence planning identified access and equity, teachers and teaching, learning, alternate pathways, local management and systems strengthening as focus areas.</p>
+<p>In 2026, the school entered a Smallholder Mechanization Empowerment partnership with the Taiwan Technical Mission. The project is intended to strengthen the Lae campus farm, support self-reliance, provide practical agriculture and machinery learning, train students and farmer groups, and create demonstration opportunities.</p>
+<div class="tech-points"><span>Academic learning</span><span>Christian formation</span><span>Agriculture &amp; self-reliance</span><span>Mechanization &amp; practical skills</span><span>Digital capability</span><span>Leadership &amp; community service</span></div>
+<a class="btn btn-primary" href="partners.html">Explore School Partnerships →</a>
+<p class="small-note" style="color:#c8ddf2">Programme availability, current subject combinations, enrolment numbers and operational arrangements should be confirmed by the school administration before publication.</p>
+</div>
+<div class="tech-visual" role="img" aria-label="Stylised blue illustration representing learning, technology and practical agriculture">
+<svg class="workshop-art" viewBox="0 0 600 470" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><linearGradient id="wsbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ec7ed"/><stop offset="1" stop-color="#5f9bd8"/></linearGradient><linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#174f8a"/><stop offset="1" stop-color="#082849"/></linearGradient></defs>
+<rect width="600" height="470" fill="url(#wsbg)"/>
+<path d="M0 285 L600 255 L600 470 L0 470Z" fill="url(#floor)"/>
+<g stroke="#ffffff30" stroke-width="2"><path d="M80 0 L80 285"/><path d="M180 0 L180 280"/><path d="M280 0 L280 275"/><path d="M400 0 L400 270"/><path d="M510 0 L510 265"/></g>
+<g transform="translate(300 205)">
+<rect x="-145" y="-55" width="290" height="24" rx="6" fill="#174f8a"/>
+<rect x="-128" y="-31" width="16" height="115" fill="#123b6d"/><rect x="112" y="-31" width="16" height="115" fill="#123b6d"/>
+<rect x="-105" y="-10" width="210" height="18" rx="4" fill="#5f9bd8"/>
+<circle cx="-45" cy="0" r="25" fill="#9ec7ed" stroke="#edf6ff" stroke-width="5"/>
+<circle cx="-45" cy="0" r="9" fill="#174f8a"/>
+<path d="M22 -15 L68 -15 L86 3 L68 21 L22 21Z" fill="#5f9bd8"/>
+<path d="M35 -48 L45 -90 L55 -48" stroke="#174f8a" stroke-width="10" fill="none"/>
+</g>
+<g fill="#ffffff35"><circle cx="70" cy="70" r="5"/><circle cx="130" cy="110" r="3"/><circle cx="500" cy="80" r="4"/><circle cx="540" cy="135" r="3"/></g>
+</svg>
+<div class="visual-caption"><strong>Knowledge into opportunity</strong><span>Academic preparation, practical learning, leadership and partnerships can help students prepare for further study, work and service.</span></div>
+</div>
+</div></section>
+
+<section class="section soft"><div class="container">
+<div class="section-title"><span class="eyebrow">School Community</span><h2>Information That Matters</h2><p>A modern school website should make essential information easy to find while keeping current programme, selection, fee and calendar information subject to official confirmation.</p></div>
+<div class="notice-grid">
+<article class="notice-main"><span class="notice-label">For Parents &amp; Guardians</span><h3>Stay Connected with Bumayong</h3><p>For current information about enrolment, Grade 9 and Grade 11 selection, academic requirements, fees, boarding arrangements, student welfare, school dates or official notices, families should use the school's authorised channels. This website can serve as a central information point for verified school announcements.</p><a class="text-link" href="contact.html">Contact the school →</a></article>
+<aside class="notice-side"><div><span class="notice-label">Useful Information</span><h3>Quick Links</h3></div>
+<div class="notice-row"><h4>School News</h4><p>Follow verified announcements, achievements, events and school developments.</p><a class="text-link" href="news.html">Read news →</a></div>
+<div class="notice-row"><h4>Admissions &amp; Selection</h4><p>Access official information for students and families preparing for enrolment.</p><a class="text-link" href="admissions.html">View admissions →</a></div>
+<div class="notice-row"><h4>Forms &amp; Documents</h4><p>Access official forms and documents when published by the school.</p><a class="text-link" href="downloads.html">Browse documents →</a></div>
+</aside>
+</div>
+</div></section>
+
+<section class="section"><div class="container"><div class="principal-box">
+<div class="principal-mark" aria-hidden="true">BLSS</div>
+<div><span class="eyebrow" style="color:var(--primary)">School Leadership</span><h2>Leadership Focused on Renewal and Excellence</h2>
+<p>Public reporting documents a period of renewed focus at Bumayong, including stronger spiritual activities, community engagement and the return of a graduation ceremony in 2023 after a six-year gap. Current leadership information should be confirmed directly by the school before publication; the school's current public online sources identify school leadership and governance activity but do not provide a consistently verifiable current principal profile.</p>
+<div class="role">Bumayong Lutheran Secondary School • School of the Evangelical Lutheran Church of Papua New Guinea</div>
+<a class="text-link" href="leadership.html">Explore leadership &amp; governance →</a>
+</div>
+</div></div></section>
+
+<section class="cta"><div class="container"><h2>Connect With Bumayong Lutheran Secondary School</h2><p>For official information about admissions, academic programmes, student services, partnerships, school events or administration, contact the school through its published channels.</p><a class="btn btn-primary" href="contact.html">Contact the School Office →</a></div></section>
+</main>
+
+<footer class="footer"><div class="container">
+<div class="footer-grid">
+<div><h3>Bumayong Lutheran Secondary School</h3><p>A professional school information portal for students, families, staff, partners and the wider community in Lae, Morobe Province, Papua New Guinea.</p><p><strong>Strive For Excellence</strong></p></div>
+<div><h3>Explore</h3><ul><li><a href="about.html">About the School</a></li><li><a href="academics.html">Academic Learning</a></li><li><a href="faith-and-values.html">Faith &amp; Values</a></li><li><a href="students.html">Student Life</a></li><li><a href="news.html">News &amp; Notices</a></li></ul></div>
+<div><h3>School Information</h3><ul><li><a href="admissions.html">Admissions</a></li><li><a href="partners.html">Partnerships</a></li><li><a href="downloads.html">Forms &amp; Documents</a></li><li><a href="policies.html">Policies</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li></ul></div>
+<div class="contact-list"><h3>Contact Us</h3>
+<p>PO Box 386, Lae 411<br>Morobe Province<br>Papua New Guinea</p>
+<p>Telephone:<br><a href="tel:+6754757120">+675 475 7120</a><br>Mobile: <a href="tel:+67583700055">+675 837 00055</a></p>
+<p>Email:<br><a href="mailto:bumayong.sec@gmail.com">bumayong.sec@gmail.com</a></p>
+<p><strong>Website</strong><br><a href="https://bumayongluthschool.org/" target="_blank" rel="noopener">bumayongluthschool.org</a></p>
+<p><strong>Office Hours</strong><br>Monday – Friday<br>9:00 am – 5:00 pm</p>
+</div>
+</div>
+<div class="footer-bottom"><p>© <span id="year"></span> Bumayong Lutheran Secondary School. School information should be verified with the administration before official use.</p></div>
+</div></footer>
+
+<script>
+function toggleNav(){const nav=document.getElementById('mainNav');const btn=document.querySelector('.nav-toggle');const open=nav.classList.toggle('active');btn.setAttribute('aria-expanded',String(open));}
+document.querySelectorAll('.has-dropdown > a').forEach(link=>{link.addEventListener('click',function(e){if(window.matchMedia('(max-width: 760px)').matches){e.preventDefault();const item=this.parentElement;item.classList.toggle('open');}});});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
